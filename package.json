@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@carbon/charts": "0.55.0",
+    "@carbon/charts-react": "0.55.0",
+    "@carbon/icons-react": "^11.2.0",
+    "@carbon/pictograms-react": "^11.26.2",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^3.8.0",
+    "cookie-cutter": "^0.2.0",
+    "d3": "^7.0.0",
+    "html-react-parser": "^1.4.14",
+    "next": "latest",
+    "next-utils": "^0.2.1",
+    "react": "17.0.2",
+    "react-chartjs-2": "^4.2.0",
+    "react-dom": "17.0.2"
+  }
+}

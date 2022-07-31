@@ -1,0 +1,123 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --green: #8eb380;
+    --blue: #073863;
+    --darkblue: #3b2d44;
+
+    --padding: 20px;
+    --padding-min: 10px;
+    --padding-max: 40px;
+
+    --margin: 20px;
+    --margin-min: 10px;
+    --margin-max: 40px;
+
+    --border-radius: 20px;
+    --border-radius-min: 10px;
+    --border-radius-max: 40px;
+
+    --xxx-large: 35px
+}
+
+/* RADAR */
+/* @import "https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|IBM+Plex+Sans:400,600&display=swap";
+@import "https://unpkg.com/carbon-components/css/carbon-components.min.css"; */
+
+/* DEFAULT BEGIN */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    margin: 0;
+    word-wrap: break-word;
+}
+/* DEFAULT END */
+
+
+/* PRELOADER */
+@keyframes preloader {
+    from {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.preloaderIcon img {
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -moz-animation-name: preloader;
+    -webkit-animation-name: preloader;
+    animation-name: preloader;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+/* SIDES BEGIN */
+.leftSide,
+.rightSide {
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: var(--padding-max);
+    max-width: 800px;
+}
+
+.leftSide {
+    width: 40%;
+}
+
+.rightSide {
+    padding-left: var(--padding-max);
+    width: calc(60% - var(--padding-max));
+}
+
+@media screen and (max-width: 1024px) {
+
+    .leftSide,
+    .rightSide {
+        display: inline-block;
+        width: 100%;
+        vertical-align: top;
+        padding-left: 0;
+    }
+}
+/* SIDES END */

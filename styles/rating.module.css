@@ -1,0 +1,142 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: calc(100% - 100px);
+    padding: 0 var(--margin-min);
+    overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgba(7, 56, 99, 0.3);
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+
+/* WRAP */
+.wrap > .title {
+    font-weight: 900;
+    padding-top: var(--margin-max);
+}
+
+.wrap>.title:first-of-type {
+    padding-top: 0;
+}
+
+
+/* CRITERIA GROUP */
+.criteriaGroup {
+    border-radius: var(--border-radius);
+    /* -webkit-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15); */
+    padding: var(--padding);
+    padding-bottom: 0;
+    padding-left: 0;
+    margin: var(--margin-min) 0;
+    margin-bottom: var(--margin);
+}
+
+.criteriaGroup > .title,
+.criteriaGroup > .result {
+    font-weight: 900;
+    font-size: x-large;
+}
+
+/* CRITERIA & SUBCRITERIA*/
+.criteria,
+.subcriteria {
+    margin: var(--margin) 0;
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+
+/* TEXTS */
+.title {
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.points {
+    /* background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+    padding: calc(1.3 * var(--padding-min)) var(--padding-min); */
+    border-radius: 50%;
+}
+
+.criteriaInfo {
+    font-weight: 400;
+    font-size: large;
+}
+
+.result {
+    margin-top: var(--margin-min);
+    font-size: large;
+}
+
+.result > span {
+    font-weight: 600;
+}
+
+.description {
+    padding-top: var(--padding);
+    font-size: large;
+}
+
+/* 
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: fit-content;
+        height: auto;
+        padding: 0;
+        overflow-x: auto;
+    }
+        
+    .container::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    .container > .wrap {
+        width: max-content;
+    }
+
+    .criteriaGroup {
+        width: max-content;
+        display: inline-block;
+        vertical-align: top;
+        width: max-content;
+        position: relative;
+        border-radius: var(--border-radius);
+        padding: var(--padding);
+        margin: var(--margin) 0;
+        margin-bottom: var(--margin-max);
+    }
+
+    .criteria,
+    .subcriteria {
+        display: inline-block;
+        vertical-align: top;
+        width: max-content;
+        margin: var(--margin);
+    }
+
+    .criteria {
+        margin-left: 0;
+    }
+} */

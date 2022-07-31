@@ -1,0 +1,169 @@
+.bg {
+    background-color: var(--blue);
+    max-width: 25vw;
+    min-width: 100px;
+    width: fit-content;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    transform: translateX(calc(-1 * (100% - 80px)));
+    transition: 0.5s;
+    z-index: 99;
+    border-top-right-radius: var(--border-radius-max);
+    border-bottom-right-radius: var(--border-radius-max);
+}
+
+.bg:hover {
+    transform: translateX(0);
+}
+
+.menuBtn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menu {
+    width: 100%;
+    height: calc(100vh - 40px*2 - 120px*2 - 5px);
+    margin: 120px 0px;
+    color: var(--white);
+}
+
+.menuSocial {
+    width: 100%;
+    margin: 120px 0px;
+    color: var(--white);
+}
+
+.menuSocial > .menuElem,
+.menu > .menuElem {
+    padding: var(--padding);
+    padding-right: 100px;
+    transition: 0.5s;
+    position: relative;
+}
+
+.menuSocial > .menuElem:hover,
+.menu > .menuElem:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menuSocial > .menuElem > .menuElemName,
+.menu > .menuElem > .menuElemName {
+    cursor: pointer;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.menuSocial > .menuElem > .menuElemIcon,
+.menu > .menuElem > .menuElemIcon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    /* filter: invert(1); */
+    background-size: cover;
+}
+
+.menuSocial>.menuElem>.menuElemIcon {
+    filter: invert(1)
+}
+
+/* #profile {
+    background: url("../public/img/platform/profile.svg");
+}
+#rating {
+    background: url("../public/img/platform/rating.svg");
+} */
+
+#vk {
+    background: url("../public/img/platform/vk.svg");
+}
+
+
+@media screen and (max-width: 1024px) {
+    .bg {
+        background-color: var(--blue);
+            /* background-color: transparent; */
+        max-width: 70vw;
+        min-width: 100px;
+        left: 0;
+        top: 0;
+        height: 80px;
+        transform: translateX(calc(-1 * (100% - 80px)));
+        transition: 0.5s;
+        z-index: 99;
+
+        border-top-right-radius: var(--border-radius-max);
+        border-bottom-right-radius: var(--border-radius-max);
+
+        overflow-y: hidden;
+    }
+
+    .bg:hover {
+        transform: translateX(0);
+        background-color: var(--blue);
+        height: 100%;
+        border-top-right-radius: var(--border-radius-max);
+        border-bottom-right-radius: var(--border-radius-max);
+    }
+
+    .menuBtn {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .menu {
+        width: 100%;
+        height: calc(100% - 40px*2 - 120px*2 - 5px);
+        margin: 120px 0px;
+        color: var(--white);
+    }
+
+    .menuSocial {
+        width: 100%;
+        margin: 120px 0px;
+        color: var(--white);
+    }
+
+    .menuSocial > .menuElem,
+    .menu > .menuElem {
+        padding: var(--padding);
+        padding-right: 100px;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    .menuSocial > .menuElem:hover,
+    .menu > .menuElem:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .menuSocial > .menuElem > .menuElemName,
+    .menu > .menuElem > .menuElemName {
+        cursor: pointer;
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .menuSocial > .menuElem > .menuElemIcon,
+    .menu > .menuElem > .menuElemIcon {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+    }
+}
+

@@ -1,0 +1,34 @@
+.bg {
+    background-color: var(--white);
+    z-index: 0;
+    height: 100%;
+    width: 100vw;
+    padding: var(--padding-min) var(--padding-max);
+    padding-left: 120px;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.titleContent {
+    width: 100%;
+    padding-bottom: var(--padding-max);
+    /* display: none; */
+}
+
+.titleContent>p {
+    color: var(--black);
+    font-weight: 900;
+    font-size: var(--xxx-large);
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .titleContent {
+        padding-left: 80px;
+        padding-bottom: var(--padding)
+    }
+    .bg {
+        padding: var(--padding-min);
+        /* padding-top: 40px; */
+    }
+}

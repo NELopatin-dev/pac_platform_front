@@ -1,0 +1,38 @@
+.btn {
+    margin: 0;
+    margin-right: var(--margin);
+    margin-bottom: var(--margin);
+    background: transparent;
+    border: 0;
+    padding: var(--padding-min) var(--padding);
+    font-size: medium;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn_round {
+    margin: 0;
+    margin-right:var(--margin);
+    margin-bottom: var(--margin);
+    background: transparent;
+    border: 0;
+    border-radius: var(--border-radius);
+    padding: var(--padding-min) var(--padding);
+    font-size: medium;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active {
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+        -moz-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+        box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+}
+
+.btn:hover,
+.btn_round:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    -moz-box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+    box-shadow: 0px 0px 15px 4px rgba(34, 60, 80, 0.15);
+}
